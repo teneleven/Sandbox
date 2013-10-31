@@ -64,15 +64,3 @@ swiftmailer:
     username:  %mailer_user%
     password:  %mailer_password%
     spool:     { type: memory }
-
-bazinga_geocoder:
-    providers:
-        google_maps: ~
-
-ivory_google_map:
-    map:
-        width: "100%"
-        height: "600px"
-        auto_zoom: true
-    info_window:
-        auto_close: true
