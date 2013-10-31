@@ -16,6 +16,11 @@ class AppKernel extends Kernel
             new Symfony\Bundle\AsseticBundle\AsseticBundle(),
             new Doctrine\Bundle\DoctrineBundle\DoctrineBundle(),
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
+            new Teneleven\Bundle\GeolocatorBundle\TenelevenGeolocatorBundle(),
+            new Teneleven\Bundle\SandboxBundle\TenelevenSandboxBundle(),
+            new Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle(),
+            new Bazinga\Bundle\GeocoderBundle\BazingaGeocoderBundle(),
+            new Ivory\GoogleMapBundle\IvoryGoogleMapBundle()
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

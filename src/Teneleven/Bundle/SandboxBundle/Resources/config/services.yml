@@ -1,0 +1,8 @@
+parameters:
+#    teneleven_sandbox.example.class: Teneleven\Bundle\SandboxBundle\Example
+
+services:
+    teneleven_sandbox.location_provider.dealer:
+        class: Teneleven\Bundle\SandboxBundle\LocationProvider\DealerLocationProvider
+        arguments: ['@doctrine.orm.entity_manager']
+        tags: [{ name: teneleven.location_provider, alias: dealer }]

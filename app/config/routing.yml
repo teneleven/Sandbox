@@ -1,0 +1,3 @@
+teneleven_sandbox:
+    resource: "@TenelevenSandboxBundle/Resources/config/routing.yml"
+    prefix:   /

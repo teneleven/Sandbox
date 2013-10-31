@@ -1,0 +1,15 @@
+{% extends 'TenelevenGeolocatorBundle::results.html.twig' %}
+
+{% block teneleven_geolocator_header %}
+    <h1>Find a Retailer</h1>
+    <p class="lead-in">Colorescience is available at Fine Spas &amp; Skin Care Professionals. Use our locator to find a Spa or Skin Care Professional near you.</p>
+{% endblock %}
+
+{% block teneleven_geolocator_list_item %}
+    <div class="pull-right telephone">{{ location.phone }}</div>
+    <h4>{{ location.name }}</h4> {{ location.street }}<br />{{ location.city }}, {{ location.state }} {{ location.zip }}
+{% endblock %}
+
+{% block teneleven_geolocator_item_window %}
+    <h4>{{ location.name }}</h4> {{ location.street }}<br />{{ location.city }}, {{ location.state }} {{ location.zip }}
+{% endblock %}

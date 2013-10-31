@@ -1,0 +1,11 @@
+teneleven_sandbox_homepage:
+    path:  /
+    defaults: { _controller: TenelevenSandboxBundle:Default:index }
+
+teneleven_sandbox_dealers:
+    path:  /dealers
+    defaults: { _controller: teneleven.geolocator.controller:locate, entity: dealer, template: 'TenelevenSandboxBundle:Dealer:results.html.twig' }
+
+teneleven_sandbox_stores:
+    path:  /stores
+    defaults: { _controller: teneleven.geolocator.controller:locate, entity: store }
