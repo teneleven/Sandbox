@@ -1,15 +1,23 @@
+{% set teneleven_geolocator_layout = '::base.html.twig' %}
 {% extends 'TenelevenGeolocatorBundle::results.html.twig' %}
 
 {% block teneleven_geolocator_header %}
     <h1>Find a Retailer</h1>
-    <p class="lead-in">Colorescience is available at Fine Spas &amp; Skin Care Professionals. Use our locator to find a Spa or Skin Care Professional near you.</p>
+    <p class="lead-in">Use our locator to find a location near you.</p>
 {% endblock %}
 
 {% block teneleven_geolocator_list_item %}
-    <div class="pull-right telephone">{{ location.phone }}</div>
+    {% set location = result.location %}
+    <div class="pull-right">{{ location.phone }}</div>
     <h4>{{ location.name }}</h4> {{ location.street }}<br />{{ location.city }}, {{ location.state }} {{ location.zip }}
+    <p>Distance: {{ result.distance|number_format(2) }} miles</p>
 {% endblock %}
 
 {% block teneleven_geolocator_item_window %}
+    {% set location = result.location %}
     <h4>{{ location.name }}</h4> {{ location.street }}<br />{{ location.city }}, {{ location.state }} {{ location.zip }}
+{% endblock %}
+
+{% block body %}
+    {{ block('teneleven_geolocator_body') }}
 {% endblock %}

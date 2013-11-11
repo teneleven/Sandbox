@@ -3,8 +3,113 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "8ee045d4d3845a92eed9b5efd5999eb8",
+    "hash": "8ae77e3f642f28b4c3cf09f49f4c61b8",
     "packages": [
+        {
+            "name": "craue/geo-bundle",
+            "version": "1.0.1",
+            "target-dir": "Craue/GeoBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/craue/CraueGeoBundle.git",
+                "reference": "27522f0e0988c7bdef76543e33096c04abacbdf8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/craue/CraueGeoBundle/zipball/27522f0e0988c7bdef76543e33096c04abacbdf8",
+                "reference": "27522f0e0988c7bdef76543e33096c04abacbdf8",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2",
+                "symfony/framework-bundle": "~2.0"
+            },
+            "suggest": {
+                "doctrine/data-fixtures": "*"
+            },
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-0": {
+                    "Craue\\GeoBundle": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Christian Raue",
+                    "email": "christian.raue@gmail.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://github.com/craue/CraueGeoBundle/contributors"
+                }
+            ],
+            "description": "Doctrine functions for calculating geographical distances in your Symfony2 project.",
+            "homepage": "https://github.com/craue/CraueGeoBundle",
+            "keywords": [
+                "Symfony2",
+                "geo"
+            ],
+            "time": "2013-09-25 08:54:43"
+        },
+        {
+            "name": "creof/doctrine2-spatial",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/djlambert/doctrine2-spatial.git",
+                "reference": "2e3530f7578aca84f18b0138f64b0f535ebdc047"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/djlambert/doctrine2-spatial/zipball/2e3530f7578aca84f18b0138f64b0f535ebdc047",
+                "reference": "2e3530f7578aca84f18b0138f64b0f535ebdc047",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/orm": ">=2.1"
+            },
+            "require-dev": {
+                "doctrine/common": ">=2.1",
+                "doctrine/dbal": ">=2.1",
+                "phpunit/phpunit": ">=3.7",
+                "rhumsaa/array_column": "~1.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "CrEOF\\Spatial": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Derek Lambert",
+                    "email": "dlambert@dereklambert.com"
+                }
+            ],
+            "description": "Doctrine2 multi-platform support for spatial types and functions",
+            "keywords": [
+                "database",
+                "dbal",
+                "geography",
+                "geometry",
+                "gis",
+                "mysql",
+                "opengis",
+                "orm",
+                "postgis",
+                "postgresql",
+                "spatial"
+            ],
+            "time": "2013-11-06 22:50:50"
+        },
         {
             "name": "doctrine/annotations",
             "version": "v1.1.2",
@@ -78,16 +183,16 @@
         },
         {
             "name": "doctrine/cache",
-            "version": "v1.2.0",
+            "version": "v1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/cache.git",
-                "reference": "d0e4447707a064a5814b18cb0dcc2f24185f6179"
+                "reference": "e16d7adf45664a50fa86f515b6d5e7f670130449"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/cache/zipball/d0e4447707a064a5814b18cb0dcc2f24185f6179",
-                "reference": "d0e4447707a064a5814b18cb0dcc2f24185f6179",
+                "url": "https://api.github.com/repos/doctrine/cache/zipball/e16d7adf45664a50fa86f515b6d5e7f670130449",
+                "reference": "e16d7adf45664a50fa86f515b6d5e7f670130449",
                 "shasum": ""
             },
             "require": {
@@ -95,6 +200,10 @@
             },
             "conflict": {
                 "doctrine/common": ">2.2,<2.4"
+            },
+            "require-dev": {
+                "phpunit/phpunit": ">=3.7",
+                "satooshi/php-coveralls": "~0.6"
             },
             "type": "library",
             "extra": {
@@ -115,7 +224,8 @@
                 {
                     "name": "Jonathan Wage",
                     "email": "jonwage@gmail.com",
-                    "homepage": "http://www.jwage.com/"
+                    "homepage": "http://www.jwage.com/",
+                    "role": "Creator"
                 },
                 {
                     "name": "Guilherme Blanco",
@@ -143,7 +253,7 @@
                 "cache",
                 "caching"
             ],
-            "time": "2013-09-26 19:23:25"
+            "time": "2013-10-25 19:04:14"
         },
         {
             "name": "doctrine/collections",
@@ -347,12 +457,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/dbal.git",
-                "reference": "0e4de6bab9c0b7cfde3e5d1faedb0a68e9c1e08a"
+                "reference": "9e3e9cc5aa146d967a1555804d28a3f57d8e5d3a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/dbal/zipball/0e4de6bab9c0b7cfde3e5d1faedb0a68e9c1e08a",
-                "reference": "0e4de6bab9c0b7cfde3e5d1faedb0a68e9c1e08a",
+                "url": "https://api.github.com/repos/doctrine/dbal/zipball/9e3e9cc5aa146d967a1555804d28a3f57d8e5d3a",
+                "reference": "9e3e9cc5aa146d967a1555804d28a3f57d8e5d3a",
                 "shasum": ""
             },
             "require": {
@@ -385,7 +495,8 @@
                 {
                     "name": "Jonathan Wage",
                     "email": "jonwage@gmail.com",
-                    "homepage": "http://www.jwage.com/"
+                    "homepage": "http://www.jwage.com/",
+                    "role": "Creator"
                 },
                 {
                     "name": "Guilherme Blanco",
@@ -409,7 +520,7 @@
                 "persistence",
                 "queryobject"
             ],
-            "time": "2013-10-23 04:32:37"
+            "time": "2013-11-10 17:51:03"
         },
         {
             "name": "doctrine/doctrine-bundle",
@@ -670,12 +781,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/doctrine2.git",
-                "reference": "b7cb1e98ee4264e6c65352c596573f070b25d67c"
+                "reference": "0edf2bc585dab37c7d935aee34e240632fda2dac"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/doctrine2/zipball/b7cb1e98ee4264e6c65352c596573f070b25d67c",
-                "reference": "b7cb1e98ee4264e6c65352c596573f070b25d67c",
+                "url": "https://api.github.com/repos/doctrine/doctrine2/zipball/0edf2bc585dab37c7d935aee34e240632fda2dac",
+                "reference": "0edf2bc585dab37c7d935aee34e240632fda2dac",
                 "shasum": ""
             },
             "require": {
@@ -715,7 +826,8 @@
                 {
                     "name": "Jonathan Wage",
                     "email": "jonwage@gmail.com",
-                    "homepage": "http://www.jwage.com/"
+                    "homepage": "http://www.jwage.com/",
+                    "role": "Creator"
                 },
                 {
                     "name": "Guilherme Blanco",
@@ -737,7 +849,7 @@
                 "database",
                 "orm"
             ],
-            "time": "2013-10-23 09:32:45"
+            "time": "2013-11-07 15:43:36"
         },
         {
             "name": "egeloen/google-map",
@@ -1002,12 +1114,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kriswallsmith/assetic.git",
-                "reference": "0cee699eca14f7c23d0667fa5f7e14d1a8b3af87"
+                "reference": "d4680d449a9da80fb82e17627270c91b93a0d46d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kriswallsmith/assetic/zipball/0cee699eca14f7c23d0667fa5f7e14d1a8b3af87",
-                "reference": "0cee699eca14f7c23d0667fa5f7e14d1a8b3af87",
+                "url": "https://api.github.com/repos/kriswallsmith/assetic/zipball/d4680d449a9da80fb82e17627270c91b93a0d46d",
+                "reference": "d4680d449a9da80fb82e17627270c91b93a0d46d",
                 "shasum": ""
             },
             "require": {
@@ -1065,7 +1177,7 @@
                 "compression",
                 "minification"
             ],
-            "time": "2013-10-05 09:46:50"
+            "time": "2013-10-25 15:17:36"
         },
         {
             "name": "monolog/monolog",
@@ -1073,12 +1185,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "c600461b0f1a8943696f931fc11db475193f62cd"
+                "reference": "a5010756d905264ea2b3f7f27c7df22fb9a3bd8e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/c600461b0f1a8943696f931fc11db475193f62cd",
-                "reference": "c600461b0f1a8943696f931fc11db475193f62cd",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/a5010756d905264ea2b3f7f27c7df22fb9a3bd8e",
+                "reference": "a5010756d905264ea2b3f7f27c7df22fb9a3bd8e",
                 "shasum": ""
             },
             "require": {
@@ -1128,7 +1240,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2013-10-24 12:32:52"
+            "time": "2013-11-04 08:48:35"
         },
         {
             "name": "psr/log",
@@ -1591,12 +1703,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/symfony.git",
-                "reference": "10751c89fb8ae2c1894fbe651f3baf24585b5be5"
+                "reference": "b76ac2f865bae2e2ca87302935f5d9a458f1401f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/symfony/zipball/10751c89fb8ae2c1894fbe651f3baf24585b5be5",
-                "reference": "10751c89fb8ae2c1894fbe651f3baf24585b5be5",
+                "url": "https://api.github.com/repos/symfony/symfony/zipball/b76ac2f865bae2e2ca87302935f5d9a458f1401f",
+                "reference": "b76ac2f865bae2e2ca87302935f5d9a458f1401f",
                 "shasum": ""
             },
             "require": {
@@ -1696,11 +1808,11 @@
             "keywords": [
                 "framework"
             ],
-            "time": "2013-10-24 15:58:31"
+            "time": "2013-11-09 16:01:15"
         },
         {
             "name": "teneleven/geolocator-bundle",
-            "version": "0.1",
+            "version": "0.2",
             "target-dir": "Teneleven/Bundle/GeolocatorBundle",
             "source": {
                 "type": "git",
@@ -1767,12 +1879,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fabpot/Twig.git",
-                "reference": "27bd8b185f9e7e217952de05756fdfce6bdc4673"
+                "reference": "cf21274a00b402d9b54b7478bedb040ce6befc56"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fabpot/Twig/zipball/27bd8b185f9e7e217952de05756fdfce6bdc4673",
-                "reference": "27bd8b185f9e7e217952de05756fdfce6bdc4673",
+                "url": "https://api.github.com/repos/fabpot/Twig/zipball/cf21274a00b402d9b54b7478bedb040ce6befc56",
+                "reference": "cf21274a00b402d9b54b7478bedb040ce6befc56",
                 "shasum": ""
             },
             "require": {
@@ -1781,7 +1893,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.14-dev"
+                    "dev-master": "1.15-dev"
                 }
             },
             "autoload": {
@@ -1808,7 +1920,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2013-10-17 08:34:06"
+            "time": "2013-11-06 10:15:23"
         },
         {
             "name": "willdurand/geocoder",
@@ -1934,9 +2046,9 @@
 
     ],
     "minimum-stability": "dev",
-    "stability-flags": [
-
-    ],
+    "stability-flags": {
+        "creof/doctrine2-spatial": 20
+    },
     "platform": {
         "php": ">=5.3.3"
     },

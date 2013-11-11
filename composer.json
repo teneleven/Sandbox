@@ -11,7 +11,7 @@
             "type": "package",
             "package": {
                 "name": "teneleven/geolocator-bundle",
-                "version": "0.1",
+                "version": "0.2",
                 "source": {
                     "type": "git",
                     "url": "git@teneleven.beanstalkapp.com:/geolocatorbundle.git",
@@ -37,11 +37,12 @@
         "sensio/framework-extra-bundle": "~2.3",
         "sensio/generator-bundle": "~2.3",
         "incenteev/composer-parameter-handler": "~2.0",
-        "teneleven/geolocator-bundle": "0.1",
+        "teneleven/geolocator-bundle": "0.2",
         "willdurand/geocoder-bundle": "~1.2",
         "fzaninotto/faker": "1.2.*",
         "doctrine/doctrine-fixtures-bundle": "2.2.*",
-        "egeloen/google-map-bundle": "*"
+        "egeloen/google-map-bundle": "*",
+        "craue/geo-bundle": "~1.0"
     },
     "scripts": {
         "post-install-cmd": [
