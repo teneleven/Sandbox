@@ -1,0 +1,9 @@
+ivory_google_map:
+    map:
+        #default location to Teneleven Office
+        center:
+            latitude:  32.726104
+            longitude: -117.226081
+            no_wrap: true
+
+        zoom: 8

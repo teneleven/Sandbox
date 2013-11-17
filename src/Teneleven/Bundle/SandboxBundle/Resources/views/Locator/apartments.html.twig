@@ -1,0 +1,36 @@
+{% set teneleven_geolocator_layout = '::base.html.twig' %}
+{% extends 'TenelevenGeolocatorBundle::results.html.twig' %}
+
+{% block teneleven_geolocator_header %}
+    <h1>Find an Apartment</h1>
+    <p class="lead-in">Use our locator to find a location near you.</p>
+{% endblock %}
+
+{% block teneleven_geolocator_list_item %}
+    {% set location = result.location %}
+    <div class="pull-right">${{ location.rent }}</div>
+    {{ location.street }}<br />{{ location.city }}, {{ location.state }} {{ location.zip }}
+    <p>Distance: {{ result.distance|number_format(2) }} miles</p>
+{% endblock %}
+
+{% block teneleven_geolocator_item_window %}
+    {% set location = result.location %}
+    {{ location.street }}<br />{{ location.city }}, {{ location.state }} {{ location.zip }}
+{% endblock %}
+
+{% block teneleven_geolocator_form %}
+    <legend>Search by Address and Rent Limit</legend>
+    {{ form_errors(form) }}
+    <form class="form-horizontal" role="form" method="GET">
+        {{ form_row(form.location, { 'attr': { 'placeholder': 'Full Address or Zip Code', 'class': 'form-control' } }) }}
+        {{ form_row(form.radius, { 'attr': { 'class': 'form-control' } }) }}
+        {{ form_row(form.maxRent, { 'attr': { 'placeholder': 'Max Rent', 'class': 'form-control' } }) }}
+        {{ form_row(form.sortBy, { 'attr': { 'class': 'form-control' } }) }}
+        <hr />
+        <button type="submit" class="btn btn-primary btn-block">Submit <i class="icon icon-dotted-arrow-right"></i></button>
+    </form>
+{% endblock %}
+
+{% block body %}
+    {{ block('teneleven_geolocator_body') }}
+{% endblock %}

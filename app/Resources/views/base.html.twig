@@ -25,11 +25,30 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
-                        <li><a href="{{ path('teneleven_sandbox_dealers') }}">Geolocator Bundle</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Geolocator Bundle <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="{{ path('teneleven_sandbox_dealers') }}">Dealer Locator</a></li>
+                                <li><a href="{{ path('teneleven_sandbox_apartments') }}">Apartment Locator</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
             </nav>
+
+            {% block flashes %}
+                {% for name, flashes in app.session.flashbag.all if name in ['success', 'error'] %}
+                    {% for flash in flashes %}
+                        <div class="alert alert-{{ name == 'error' ? 'danger' : name }}">
+                            <button type="button" class="close" aria-hidden="true">&times;</button>
+                            {{ flash|trans }}
+                        </div>
+                    {% endfor %}
+                {% endfor %}
+            {% endblock %}
+
             {% block body %}{% endblock %}
+
             <div>
                 <br /><hr />
                 <p class="text-center">Copyright &copy; {{ null|date('Y') }} &mdash; Teneleven Inc.</p>
@@ -37,6 +56,7 @@
         </div>
         {% block javascripts %}
             <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+            <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
         {% endblock %}
     </body>
 </html>

@@ -1,0 +1,10 @@
+teneleven_geolocator:
+    locatables:
+        dealer:
+            repository: teneleven_sandbox.repository.dealer
+            #radius: 300
+            #limit: 50
+            address_properties: [street, city, state, zip]
+
+        #apartment:
+        #    repository: teneleven_sandbox.repository.apartment

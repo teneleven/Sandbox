@@ -2,7 +2,23 @@ parameters:
 #    teneleven_sandbox.example.class: Teneleven\Bundle\SandboxBundle\Example
 
 services:
-    teneleven_sandbox.location_provider.dealer:
-        class: Teneleven\Bundle\SandboxBundle\LocationProvider\DealerLocationProvider
-        arguments: ['@doctrine.orm.entity_manager']
-        tags: [{ name: teneleven.location_provider, alias: dealer }]
+    teneleven_sandbox.repository.dealer:
+        class: Doctrine\Common\Persistence\ObjectRepository
+        factory_service: 'doctrine.orm.entity_manager'
+        factory_method: 'getRepository'
+        arguments: ['TenelevenSandboxBundle:Dealer']
+
+    teneleven_sandbox.repository.apartment:
+        class: Doctrine\Common\Persistence\ObjectRepository
+        factory_service: 'doctrine.orm.entity_manager'
+        factory_method: 'getRepository'
+        arguments: ['TenelevenSandboxBundle:Apartment']
+
+    teneleven_sandbox.location_provider.apartment:
+        class: Teneleven\Bundle\SandboxBundle\LocationProvider\ApartmentLocationProvider
+        arguments: ['@teneleven_sandbox.repository.apartment']
+        tags: [{ name: teneleven.location_provider, alias: apartment }]
+
+    teneleven_sandbox.form_type.apartment_locator:
+        class: Teneleven\Bundle\SandboxBundle\Form\ApartmentLocatorType
+        tags: [{ name: form.type, alias: teneleven_sandbox_apartment_locator }]

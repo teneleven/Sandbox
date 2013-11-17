@@ -4,8 +4,8 @@ teneleven_sandbox_homepage:
 
 teneleven_sandbox_dealers:
     path:  /dealers
-    defaults: { _controller: teneleven.geolocator.controller:locate, entity: dealer, template: 'TenelevenSandboxBundle:Dealer:results.html.twig' }
+    defaults: { _controller: teneleven.geolocator.controller:locate, entity: dealer, template: 'TenelevenSandboxBundle:Locator:dealers.html.twig' }
 
-teneleven_sandbox_stores:
-    path:  /stores
-    defaults: { _controller: teneleven.geolocator.controller:locate, entity: store }
+teneleven_sandbox_apartments:
+    path:  /apartments
+    defaults: { _controller: teneleven.geolocator.controller:locate, entity: apartment, template: 'TenelevenSandboxBundle:Locator:apartments.html.twig' }
