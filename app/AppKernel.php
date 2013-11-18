@@ -21,6 +21,7 @@ class AppKernel extends Kernel
             new Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle(),
             new Bazinga\Bundle\GeocoderBundle\BazingaGeocoderBundle(),
             new Ivory\GoogleMapBundle\IvoryGoogleMapBundle(),
+            new Widop\HttpAdapterBundle\WidopHttpAdapterBundle() //unfortunately required by ivorygooglemapsbundle
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
