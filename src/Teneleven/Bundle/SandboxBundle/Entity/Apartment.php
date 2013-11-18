@@ -3,7 +3,7 @@
 namespace Teneleven\Bundle\SandboxBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
-use Teneleven\Bundle\GeolocatorBundle\Model\GeoLocatableInterface;
+use Teneleven\Bundle\GeolocatorBundle\Model\GeolocatableInterface;
 
 /**
  * Apartment
