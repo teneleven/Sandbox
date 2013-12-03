@@ -8,20 +8,8 @@
     },
     "repositories": [
         {
-            "type": "package",
-            "package": {
-                "name": "teneleven/geolocator-bundle",
-                "version": "0.2",
-                "source": {
-                    "type": "git",
-                    "url": "git@teneleven.beanstalkapp.com:/geolocatorbundle.git",
-                    "reference": "master"
-                },
-                "autoload": {
-                    "psr-0": { "Teneleven\\Bundle\\GeolocatorBundle": "" }
-                },
-                "target-dir": "Teneleven/Bundle/GeolocatorBundle"
-            }
+            "type": "vcs",
+            "url": "git@teneleven.beanstalkapp.com:/teneleven/geolocatorbundle.git"
         }
     ],
     "require": {
@@ -37,7 +25,7 @@
         "sensio/framework-extra-bundle": "~2.3",
         "sensio/generator-bundle": "~2.3",
         "incenteev/composer-parameter-handler": "~2.0",
-        "teneleven/geolocator-bundle": "0.2",
+        "teneleven/geolocator-bundle": "dev-master",
         "fzaninotto/faker": "1.2.*",
         "doctrine/doctrine-fixtures-bundle": "2.2.*",
         "willdurand/geocoder-bundle": "~1.2",
