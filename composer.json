@@ -30,8 +30,7 @@
         "doctrine/doctrine-fixtures-bundle": "2.2.*",
         "willdurand/geocoder-bundle": "~1.2",
         "egeloen/google-map-bundle": "*",
-        "craue/geo-bundle": "~1.0",
-        "widop/http-adapter-bundle": "1.1.*"
+        "craue/geo-bundle": "~1.0"
     },
     "scripts": {
         "post-install-cmd": [

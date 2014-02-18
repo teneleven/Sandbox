@@ -6,5 +6,5 @@ teneleven_geolocator:
             #limit: 50
             address_properties: [street, city, state, zip]
 
-        #apartment:
-        #    repository: teneleven_sandbox.repository.apartment
+        apartment:
+            address_properties: [street, city, state, zip]
