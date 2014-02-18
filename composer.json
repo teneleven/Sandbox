@@ -1,17 +1,11 @@
 {
-    "name": "symfony/framework-standard-edition",
+    "name": "teneleven/symfony-sandbox",
     "license": "MIT",
     "type": "project",
-    "description": "The \"Symfony Standard Edition\" distribution",
+    "description": "The Teneleven sandbox to showcase, test and develop Symfony bundles",
     "autoload": {
         "psr-0": { "": "src/" }
     },
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "git@teneleven.beanstalkapp.com:/teneleven/geolocatorbundle.git"
-        }
-    ],
     "require": {
         "php": ">=5.3.3",
         "symfony/symfony": "~2.4",
@@ -25,12 +19,9 @@
         "sensio/framework-extra-bundle": "~2.3",
         "sensio/generator-bundle": "~2.3",
         "incenteev/composer-parameter-handler": "~2.0",
-        "teneleven/geolocator-bundle": "dev-master",
         "fzaninotto/faker": "1.2.*",
         "doctrine/doctrine-fixtures-bundle": "2.2.*",
-        "willdurand/geocoder-bundle": "~1.2",
-        "egeloen/google-map-bundle": "*",
-        "craue/geo-bundle": "~1.0"
+        "teneleven/geolocator-bundle": "dev-master"
     },
     "scripts": {
         "post-install-cmd": [
@@ -57,9 +48,6 @@
         "symfony-web-dir": "web",
         "incenteev-parameters": {
             "file": "app/config/parameters.yml"
-        },
-        "branch-alias": {
-            "dev-master": "2.4-dev"
         }
     }
 }
