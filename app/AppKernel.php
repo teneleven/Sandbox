@@ -20,12 +20,10 @@ class AppKernel extends Kernel
             new Teneleven\Bundle\SandboxBundle\TenelevenSandboxBundle(),
             new Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle(),
             new Bazinga\Bundle\GeocoderBundle\BazingaGeocoderBundle(),
-            new Ivory\GoogleMapBundle\IvoryGoogleMapBundle(),
-            new Widop\HttpAdapterBundle\WidopHttpAdapterBundle() //unfortunately required by ivorygooglemapsbundle
+            new Ivory\GoogleMapBundle\IvoryGoogleMapBundle()
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
-            $bundles[] = new Acme\DemoBundle\AcmeDemoBundle();
             $bundles[] = new Symfony\Bundle\WebProfilerBundle\WebProfilerBundle();
             $bundles[] = new Sensio\Bundle\DistributionBundle\SensioDistributionBundle();
             $bundles[] = new Sensio\Bundle\GeneratorBundle\SensioGeneratorBundle();
