@@ -3,31 +3,50 @@
 
 {% block teneleven_geolocator_header %}
     <h1>Find an Apartment</h1>
-    <p class="lead-in">Use our locator to find a location near you.</p>
+    <p>Use our locator to find a location near you.</p>
 {% endblock %}
 
 {% block teneleven_geolocator_list_item %}
     {% set location = result.location %}
     <div class="pull-right">${{ location.rent }}</div>
-    {{ location.street }}<br />{{ location.city }}, {{ location.state }} {{ location.zip }}
-    <p>Distance: {{ result.distance|number_format(2) }} miles</p>
+    <h4>{{ location.street }}</h4>
+    <p>{{ location.city }}, {{ location.state }} {{ location.zip }}</p>
+    <small>Distance: {{ result.distance|number_format(2) }} miles</small>
 {% endblock %}
 
 {% block teneleven_geolocator_item_window %}
     {% set location = result.location %}
-    {{ location.street }}<br />{{ location.city }}, {{ location.state }} {{ location.zip }}
+    <h4>{{ location.street }}</h4>
+    <p>{{ location.city }}, {{ location.state }} {{ location.zip }}</p>
 {% endblock %}
 
 {% block teneleven_geolocator_form %}
     <legend>Search by Address and Rent Limit</legend>
     {{ form_errors(form) }}
-    <form class="form-horizontal" role="form" method="GET">
-        {{ form_row(form.location, { 'attr': { 'placeholder': 'Full Address or Zip Code', 'class': 'form-control' } }) }}
-        {{ form_row(form.radius, { 'attr': { 'class': 'form-control' } }) }}
-        {{ form_row(form.maxRent, { 'attr': { 'placeholder': 'Max Rent', 'class': 'form-control' } }) }}
-        {{ form_row(form.sortBy, { 'attr': { 'class': 'form-control' } }) }}
+    <form role="form" method="GET">
+        <div class="row">
+            <div class="col-sm-12">
+                {{ form_row(form.location, { 'attr': { 'placeholder': 'Full Address or Zip Code', 'class': 'form-control' } }) }}
+            </div>
+            <div class="col-md-4">
+                {{ form_errors(form.radius)}}
+                {{ form_label(form.radius)}}
+                {{ form_widget(form.radius, { 'attr': { 'class': 'form-control' } }) }}
+            </div>
+            <div class="col-md-4">
+                {{ form_errors(form.maxRent)}}
+                {{ form_label(form.maxRent)}}
+                {{ form_widget(form.maxRent, { 'attr': { 'class': 'form-control' } }) }}
+            </div>
+            <div class="col-md-4">
+                {{ form_errors(form.sortBy)}}
+                {{ form_label(form.sortBy)}}
+                {{ form_widget(form.sortBy, { 'attr': { 'class': 'form-control' } }) }}
+            </div>
+        </div>
+        
         <hr />
-        <button type="submit" class="btn btn-primary btn-block">Submit <i class="icon icon-dotted-arrow-right"></i></button>
+        <button type="submit" class="btn btn-primary btn-block">Submit</button>
     </form>
 {% endblock %}
 
