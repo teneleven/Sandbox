@@ -40,7 +40,8 @@
         ]
     },
     "config": {
-        "bin-dir": "bin"
+        "bin-dir": "bin",
+        "preferred-install": "source"
     },
     "minimum-stability": "dev",
     "extra": {
