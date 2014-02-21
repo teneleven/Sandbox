@@ -9,7 +9,7 @@ if (isset($_ENV['DATABASE_URL'])) {
     $container->setParameter('database_name', trim($parts['path'], '/'));
     $container->setParameter('database_user', $parts['user']);
     $container->setParameter('database_password', $parts['pass']);
-    $container->setParameter('database_port', $parts['port']);
+    $container->setParameter('database_port', '~');
 }
 
 $container->setParameter('secret', 'Thisismysecret');
