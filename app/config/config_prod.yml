@@ -18,7 +18,7 @@ monolog:
             action_level: error
             handler:      nested
         nested:
-            type:  stream
+            type:  console
             path:  %kernel.logs_dir%/%kernel.environment%.log
             level: debug
         console:
