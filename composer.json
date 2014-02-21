@@ -55,7 +55,7 @@
             "framework":"symfony2",
             "php-config": [
                 "date.timezone=America/Los_Angeles",
-                "display_errors=on",
+                "display_errors=off",
                 "short_open_tag=off",
                 "output_buffering=0",
                 "memory_limit=256M",
