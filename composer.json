@@ -45,6 +45,22 @@
         "symfony-web-dir": "web",
         "incenteev-parameters": {
             "file": "app/config/parameters.yml"
+        },
+        "heroku": {
+            "document-root": "web",
+            "framework":"symfony2",
+            "php-config": [
+                "date.timezone=America/Bogota",
+                "display_errors=off",
+                "short_open_tag=off",
+                "output_buffering=0",
+                "memory_limit=256M",
+                "zend.enable_gc=0" 
+            ],
+            "engines": {
+                "php": "5.5.*",
+                "nginx": "1.4.*"
+            }
         }
     }
 }
