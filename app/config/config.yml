@@ -1,5 +1,5 @@
 imports:
-    - { resource: parameters.yml }
+    - { resource: heroku.php }
     - { resource: security.yml }
     - { resource: '@TenelevenSandboxBundle/Resources/config/config.yml' }
     - { resource: '@TenelevenSandboxBundle/Resources/config/ivory_map.yml' }
