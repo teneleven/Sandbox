@@ -1,8 +1,9 @@
 imports:
-    - { resource: heroku.php }
+    - { resource: parameters.yml }
     - { resource: security.yml }
     - { resource: '@TenelevenSandboxBundle/Resources/config/config.yml' }
     - { resource: '@TenelevenSandboxBundle/Resources/config/ivory_map.yml' }
+    - { resource: heroku.php }
 
 framework:
     #esi:             ~
