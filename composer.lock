@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "1c82a73891e1a1b343cdb42605904bfc",
+    "hash": "8406444ce6e9723cbf13ccaedea8603d",
     "packages": [
         {
             "name": "craue/geo-bundle",
@@ -112,7 +112,7 @@
                     "email": "kontakt@beberlei.de"
                 },
                 {
-                    "name": "Johannes M. Schmitt",
+                    "name": "Johannes Schmitt",
                     "email": "schmittjoh@gmail.com",
                     "homepage": "http://jmsyst.com",
                     "role": "Developer of wrapped JMSSerializerBundle"
@@ -168,7 +168,7 @@
             ],
             "authors": [
                 {
-                    "name": "Jonathan Wage",
+                    "name": "Jonathan H. Wage",
                     "email": "jonwage@gmail.com",
                     "homepage": "http://www.jwage.com/",
                     "role": "Creator"
@@ -254,7 +254,7 @@
                     "email": "kontakt@beberlei.de"
                 },
                 {
-                    "name": "Johannes M. Schmitt",
+                    "name": "Johannes Schmitt",
                     "email": "schmittjoh@gmail.com",
                     "homepage": "http://jmsyst.com",
                     "role": "Developer of wrapped JMSSerializerBundle"
@@ -327,7 +327,7 @@
                     "email": "kontakt@beberlei.de"
                 },
                 {
-                    "name": "Johannes M. Schmitt",
+                    "name": "Johannes Schmitt",
                     "email": "schmittjoh@gmail.com",
                     "homepage": "http://jmsyst.com",
                     "role": "Developer of wrapped JMSSerializerBundle"
@@ -406,12 +406,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/dbal.git",
-                "reference": "ca6a8dd20f3e8c1ad5fadaac8eac4547c081cf3b"
+                "reference": "b59a64de5df6e94d33009eb52ec3affb4e32103d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/dbal/zipball/ca6a8dd20f3e8c1ad5fadaac8eac4547c081cf3b",
-                "reference": "ca6a8dd20f3e8c1ad5fadaac8eac4547c081cf3b",
+                "url": "https://api.github.com/repos/doctrine/dbal/zipball/b59a64de5df6e94d33009eb52ec3affb4e32103d",
+                "reference": "b59a64de5df6e94d33009eb52ec3affb4e32103d",
                 "shasum": ""
             },
             "require": {
@@ -469,7 +469,7 @@
                 "persistence",
                 "queryobject"
             ],
-            "time": "2014-02-16 21:36:04"
+            "time": "2014-02-21 16:18:58"
         },
         {
             "name": "doctrine/doctrine-bundle",
@@ -657,7 +657,7 @@
                     "email": "kontakt@beberlei.de"
                 },
                 {
-                    "name": "Johannes M. Schmitt",
+                    "name": "Johannes Schmitt",
                     "email": "schmittjoh@gmail.com",
                     "homepage": "http://jmsyst.com",
                     "role": "Developer of wrapped JMSSerializerBundle"
@@ -716,7 +716,7 @@
                     "email": "roman@code-factory.org"
                 },
                 {
-                    "name": "Johannes M. Schmitt",
+                    "name": "Johannes Schmitt",
                     "email": "schmittjoh@gmail.com",
                     "homepage": "http://jmsyst.com",
                     "role": "Developer of wrapped JMSSerializerBundle"
@@ -736,12 +736,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/doctrine2.git",
-                "reference": "0dbd7425888cc810907dda0537a5a7846dd7ae95"
+                "reference": "f5897d4b0b428ca1f3a326c2a781b6803a60d4ca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/doctrine2/zipball/0dbd7425888cc810907dda0537a5a7846dd7ae95",
-                "reference": "0dbd7425888cc810907dda0537a5a7846dd7ae95",
+                "url": "https://api.github.com/repos/doctrine/doctrine2/zipball/f5897d4b0b428ca1f3a326c2a781b6803a60d4ca",
+                "reference": "f5897d4b0b428ca1f3a326c2a781b6803a60d4ca",
                 "shasum": ""
             },
             "require": {
@@ -804,7 +804,7 @@
                 "database",
                 "orm"
             ],
-            "time": "2014-02-17 17:12:05"
+            "time": "2014-02-21 15:14:57"
         },
         {
             "name": "egeloen/google-map",
@@ -1193,12 +1193,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "6cabe95f23322735f446b00ca8582b6c875dcbfe"
+                "reference": "08f09c20805695212ebe713b6706b8efb24f96e7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/6cabe95f23322735f446b00ca8582b6c875dcbfe",
-                "reference": "6cabe95f23322735f446b00ca8582b6c875dcbfe",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/08f09c20805695212ebe713b6706b8efb24f96e7",
+                "reference": "08f09c20805695212ebe713b6706b8efb24f96e7",
                 "shasum": ""
             },
             "require": {
@@ -1229,8 +1229,8 @@
                 }
             },
             "autoload": {
-                "psr-0": {
-                    "Monolog": "src/"
+                "psr-4": {
+                    "Monolog\\": "src/Monolog"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -1252,7 +1252,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2014-02-06 20:35:10"
+            "time": "2014-02-20 10:38:44"
         },
         {
             "name": "psr/log",
@@ -1304,12 +1304,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sensiolabs/SensioDistributionBundle.git",
-                "reference": "cf0179711b24d84d4a29d71a4010540f4c990bd8"
+                "reference": "b8abddbe220d2247a1f381d670a47648fc5b7088"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sensiolabs/SensioDistributionBundle/zipball/cf0179711b24d84d4a29d71a4010540f4c990bd8",
-                "reference": "cf0179711b24d84d4a29d71a4010540f4c990bd8",
+                "url": "https://api.github.com/repos/sensiolabs/SensioDistributionBundle/zipball/b8abddbe220d2247a1f381d670a47648fc5b7088",
+                "reference": "b8abddbe220d2247a1f381d670a47648fc5b7088",
                 "shasum": ""
             },
             "require": {
@@ -1343,39 +1343,31 @@
                 "configuration",
                 "distribution"
             ],
-            "time": "2013-12-16 06:18:38"
+            "time": "2014-02-19 15:36:36"
         },
         {
             "name": "sensio/framework-extra-bundle",
-            "version": "dev-master",
+            "version": "2.3.x-dev",
             "target-dir": "Sensio/Bundle/FrameworkExtraBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sensiolabs/SensioFrameworkExtraBundle.git",
-                "reference": "c3e20b4a1bffce8d3885b35227c28e3881f86aed"
+                "reference": "fa362cd7327727bf2b4f53971d121f0e7687deac"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sensiolabs/SensioFrameworkExtraBundle/zipball/c3e20b4a1bffce8d3885b35227c28e3881f86aed",
-                "reference": "c3e20b4a1bffce8d3885b35227c28e3881f86aed",
+                "url": "https://api.github.com/repos/sensiolabs/SensioFrameworkExtraBundle/zipball/fa362cd7327727bf2b4f53971d121f0e7687deac",
+                "reference": "fa362cd7327727bf2b4f53971d121f0e7687deac",
                 "shasum": ""
             },
             "require": {
                 "doctrine/common": "~2.2",
-                "symfony/framework-bundle": "~2.4"
-            },
-            "require-dev": {
-                "symfony/expression-language": "~2.4",
-                "symfony/security-bundle": "~2.4"
-            },
-            "suggest": {
-                "symfony/expression-language": "",
-                "symfony/security-bundle": ""
+                "symfony/framework-bundle": "~2.2"
             },
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.0.x-dev"
+                    "dev-master": "2.3.x-dev"
                 }
             },
             "autoload": {
@@ -1400,7 +1392,7 @@
                 "annotations",
                 "controllers"
             ],
-            "time": "2014-01-26 07:48:01"
+            "time": "2013-12-18 08:55:22"
         },
         {
             "name": "sensio/generator-bundle",
@@ -1409,12 +1401,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sensiolabs/SensioGeneratorBundle.git",
-                "reference": "1e1e0cca18021e87efa639788f843896a3cd79fc"
+                "reference": "eae9c659949b0901947a565ec0ff7606692ce53e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sensiolabs/SensioGeneratorBundle/zipball/1e1e0cca18021e87efa639788f843896a3cd79fc",
-                "reference": "1e1e0cca18021e87efa639788f843896a3cd79fc",
+                "url": "https://api.github.com/repos/sensiolabs/SensioGeneratorBundle/zipball/eae9c659949b0901947a565ec0ff7606692ce53e",
+                "reference": "eae9c659949b0901947a565ec0ff7606692ce53e",
                 "shasum": ""
             },
             "require": {
@@ -1450,7 +1442,7 @@
                 }
             ],
             "description": "This bundle generates code for you",
-            "time": "2014-01-07 14:18:21"
+            "time": "2014-02-19 06:31:38"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -1622,12 +1614,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/MonologBundle.git",
-                "reference": "29a17a347dfc41aed34ce9b72cceaf375635c408"
+                "reference": "71ad844ac29401f86619f9d643393265451e858b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/MonologBundle/zipball/29a17a347dfc41aed34ce9b72cceaf375635c408",
-                "reference": "29a17a347dfc41aed34ce9b72cceaf375635c408",
+                "url": "https://api.github.com/repos/symfony/MonologBundle/zipball/71ad844ac29401f86619f9d643393265451e858b",
+                "reference": "71ad844ac29401f86619f9d643393265451e858b",
                 "shasum": ""
             },
             "require": {
@@ -1675,7 +1667,7 @@
                 "log",
                 "logging"
             ],
-            "time": "2014-01-19 13:23:40"
+            "time": "2014-02-19 14:49:26"
         },
         {
             "name": "symfony/swiftmailer-bundle",
@@ -1740,12 +1732,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/symfony.git",
-                "reference": "f828aee7f749009a574eee0a1ad5bfd092b0d488"
+                "reference": "79baf8da48c5b72a3d544ac9421a019273b0feba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/symfony/zipball/f828aee7f749009a574eee0a1ad5bfd092b0d488",
-                "reference": "f828aee7f749009a574eee0a1ad5bfd092b0d488",
+                "url": "https://api.github.com/repos/symfony/symfony/zipball/79baf8da48c5b72a3d544ac9421a019273b0feba",
+                "reference": "79baf8da48c5b72a3d544ac9421a019273b0feba",
                 "shasum": ""
             },
             "require": {
@@ -1847,7 +1839,7 @@
             "keywords": [
                 "framework"
             ],
-            "time": "2014-02-11 13:52:21"
+            "time": "2014-02-20 21:26:25"
         },
         {
             "name": "teneleven/geolocator-bundle",
@@ -1855,21 +1847,48 @@
             "target-dir": "Teneleven/Bundle/GeolocatorBundle",
             "source": {
                 "type": "git",
-                "url": "git@teneleven.beanstalkapp.com:/teneleven/geolocatorbundle.git",
-                "reference": "cf96e5ccbb4e3842c37980b2ff3234af490dc8b0"
+                "url": "https://github.com/teneleven/GeolocatorBundle.git",
+                "reference": "e687849bb1df576a9d2daaa17a7dcbe50d01af5c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/teneleven/GeolocatorBundle/zipball/e687849bb1df576a9d2daaa17a7dcbe50d01af5c",
+                "reference": "e687849bb1df576a9d2daaa17a7dcbe50d01af5c",
+                "shasum": ""
             },
             "require": {
                 "craue/geo-bundle": "~1.0",
                 "egeloen/google-map-bundle": "*",
                 "willdurand/geocoder-bundle": "~1.2"
             },
-            "type": "library",
+            "type": "symfony-bundle",
             "autoload": {
                 "psr-0": {
                     "Teneleven\\Bundle\\GeolocatorBundle": ""
                 }
             },
-            "time": "2014-01-17 07:22:06"
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Daniel Richter",
+                    "email": "danny@1011i.com",
+                    "homepage": "http://www.codemassacre.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Makes your models geo-searchable on a google map",
+            "keywords": [
+                "geo locator",
+                "geo search",
+                "location search",
+                "locator",
+                "map",
+                "store locator"
+            ],
+            "time": "2014-02-18 19:18:40"
         },
         {
             "name": "twig/extensions",
@@ -1960,7 +1979,7 @@
                     "role": "Lead Developer"
                 },
                 {
-                    "name": "Armin Ronacher2",
+                    "name": "Armin Ronacher",
                     "email": "armin.ronacher@active-4.com",
                     "role": "Project Founder"
                 },
