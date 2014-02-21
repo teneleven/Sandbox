@@ -50,15 +50,15 @@
             "document-root": "web",
             "framework":"symfony2",
             "php-config": [
-                "date.timezone=America/Bogota",
-                "display_errors=off",
+                "date.timezone=America/Los_Angeles",
+                "display_errors=on",
                 "short_open_tag=off",
                 "output_buffering=0",
                 "memory_limit=256M",
                 "zend.enable_gc=0" 
             ],
             "engines": {
-                "php": "5.5.*",
+                "php": "5.5.9",
                 "nginx": "1.4.*"
             }
         }
