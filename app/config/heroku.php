@@ -12,6 +12,4 @@ if (isset($_ENV['DATABASE_URL'])) {
     $container->setParameter('database_port', $parts['port']);
 }
 
-if (isset($_ENV['SECRET'])) {
-    $container->setParameter('secret', $_ENV['SECRET']);
-}
+$container->setParameter('secret', 'Thisismysecret');
