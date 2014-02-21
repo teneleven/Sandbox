@@ -49,6 +49,11 @@
         "symfony-web-dir": "web",
         "incenteev-parameters": {
             "file": "app/config/parameters.yml"
+        },
+        "heroku": {
+            "compile": [
+                "php app/console assetic:dump --env=prod"
+            ]
         }
     }
 }
